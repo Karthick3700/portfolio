@@ -29,6 +29,12 @@ const Project = () => {
       imgUrl: second,
       siteUrl: "https://consoler-todo-list.vercel.app/",
     },
+    {
+      title: "Foody App",
+      description: "Staic Web Page",
+      imgUrl: third,
+      siteUrl: "https://consoler-foody.netlify.app/",
+    }
     
   ];
 
