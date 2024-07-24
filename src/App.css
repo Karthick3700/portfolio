@@ -401,7 +401,7 @@ nav.navbar .navbar-collapse.show .navbar-text {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
+  width: 75%;
 }
 .project .nav.nav-pills {
   width: 72%;
@@ -461,6 +461,10 @@ nav.navbar .navbar-collapse.show .navbar-text {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+}
+
+.proj-imgbx a{
+  color: white;
 }
 .proj-imgbx::before {
   content: "";

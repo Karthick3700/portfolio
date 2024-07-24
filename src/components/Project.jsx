@@ -18,20 +18,18 @@ import third from "../assets/img/third.png";
 const Project = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Justtry Technologies",
+      description: "Front End Development",
       imgUrl: first,
+      siteUrl: "https://justtrytech.com",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Task Manager",
+      description: "Front End Development",
       imgUrl: second,
+      siteUrl: "https://consoler-todo-list.vercel.app/",
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: third,
-    },
+    
   ];
 
   return (
@@ -49,11 +47,14 @@ const Project = () => {
                   >
                     <h2>Projects</h2>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.
+                      Over the years, I've had the opportunity to work on a
+                      variety of projects that have challenged me to grow and
+                      develop my skills. Each project has been a unique
+                      experience, allowing me to apply my knowledge and learn
+                      new technologies. Below, you'll find a selection of these
+                      projects, each with a brief overview of its purpose, the
+                      technologies used, and the challenges encountered during
+                      development.
                     </p>
                     <TabContainer id="projects-tabs" defaultActiveKey="first">
                       <Nav
@@ -62,13 +63,13 @@ const Project = () => {
                         id="pills-tab"
                       >
                         <Nav.Item>
-                          <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                          <Nav.Link eventKey="first">Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                          <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                          <Nav.Link eventKey="second">Personal</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                          <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                          <Nav.Link eventKey="third">Practice</Nav.Link>
                         </Nav.Item>
                       </Nav>
                       <TabContent
@@ -85,6 +86,12 @@ const Project = () => {
                               return <ProjectCard key={index} {...project} />;
                             })}
                           </Row>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="second">
+                          <p>Coming soon...</p>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="third">
+                          <p>Coming soon...</p>
                         </Tab.Pane>
                       </TabContent>
                     </TabContainer>

@@ -90,8 +90,8 @@ const Banner = () => {
                     I also adeptly implement backend functionalities.
                   </p>
 
-                  <a href="#connect" className="button">
-                    Let’s Connect <ArrowRightCircle size={25} />
+                  <a href="#education" className="button">
+                    About me <ArrowRightCircle size={25} />
                   </a>
                 </div>
               )}
