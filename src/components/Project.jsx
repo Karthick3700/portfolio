@@ -14,6 +14,7 @@ import ProjectCard from "./ProjectCard";
 import first from "../assets/img/first.png";
 import second from "../assets/img/second.png";
 import third from "../assets/img/third.png";
+import fourth from "../assets/img/fourth.png";
 
 const Project = () => {
   const projects = [
@@ -22,20 +23,29 @@ const Project = () => {
       description: "Front End Development",
       imgUrl: first,
       siteUrl: "https://justtrytech.com",
+      tag: "Business Application",
     },
     {
       title: "Task Manager",
       description: "Front End Development",
       imgUrl: second,
       siteUrl: "https://consoler-todo-list.vercel.app/",
+      tag: "Task Manager",
+    },
+    {
+      title: "Product Listing",
+      description: "Front End Development",
+      imgUrl: fourth,
+      siteUrl: "https://productlist-kn.vercel.app/",
+      tag: "Products Listing",
     },
     {
       title: "Foody App",
-      description: "Staic Web Page",
+      description: "Front End Development",
       imgUrl: third,
       siteUrl: "https://consoler-foody.netlify.app/",
-    }
-    
+      tag: "E-commerce App",
+    },
   ];
 
   return (
@@ -87,7 +97,7 @@ const Project = () => {
                         }
                       >
                         <Tab.Pane eventKey="first">
-                          <Row>
+                          <Row className="gy-5">
                             {projects.map((project, index) => {
                               return <ProjectCard key={index} {...project} />;
                             })}
