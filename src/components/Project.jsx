@@ -15,6 +15,7 @@ import first from "../assets/img/first.png";
 import second from "../assets/img/second.png";
 import third from "../assets/img/third.png";
 import fourth from "../assets/img/fourth.png";
+import fifth from "../assets/img/fifth.png";
 
 const Project = () => {
   const projects = [
@@ -45,6 +46,13 @@ const Project = () => {
       imgUrl: third,
       siteUrl: "https://consoler-foody.netlify.app/",
       tag: "E-commerce App",
+    },
+    {
+      title: "Mortgage Calculator",
+      description: "Front End Development",
+      imgUrl: fifth,
+      siteUrl: "https://calculator-mortgage.vercel.app/",
+      tag: "Mortgage Calculator",
     },
   ];
 
