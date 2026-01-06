@@ -109,15 +109,14 @@ const Header = () => {
               </>
             )}{" "}
             <Nav.Link
-              href="/projects/mobileapplications"
+              href="/applications"
               className={
                 activeLink === "education"
                   ? "active navbar-link"
                   : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("education")}
             >
-              Applicaitons
+              Applications
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
