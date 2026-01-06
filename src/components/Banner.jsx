@@ -17,6 +17,7 @@ const Banner = () => {
     "Frontend Developer",
     "Backend Developer",
     "React JS Developer",
+    "React Native Developer",
   ];
   const period = 2000;
 

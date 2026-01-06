@@ -1,12 +1,13 @@
 import React, { Fragment } from "react";
 import Header from "./Navbar";
 import Footer from "./Footer";
+import { Outlet } from "react-router-dom";
 
-const Layout = ({children}) => {
+const Layout = () => {
   return (
     <Fragment>
       <Header />
-      {children}
+      <Outlet />
       <Footer />
     </Fragment>
   );

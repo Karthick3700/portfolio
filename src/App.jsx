@@ -1,24 +1,22 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import './styles/style.css'
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from "./Home";
+
 import Layout from "./Layout/Layout";
-import Banner from "./components/Banner";
-import Skills from "./components/Skills";
-import Education from "./components/Education";
-import Project from "./components/Project";
+import Todo from "./rltodo";
 
-
-
-function App() {
+const App = () => {
   return (
-    <>
-      <Layout>
-        <Banner />
-        <Education />
-        <Skills />
-        <Project/>
-      </Layout>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects/mobileapplications" element={<Todo />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

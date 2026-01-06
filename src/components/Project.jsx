@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Col,
-  Container,
-  Nav,
-  Row,
-  Tab,
-  TabContainer,
-  TabContent,
-} from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import ProjectCard from "./ProjectCard";
@@ -80,45 +72,12 @@ const Project = () => {
                       technologies used, and the challenges encountered during
                       development.
                     </p>
-                    <TabContainer id="projects-tabs" defaultActiveKey="first">
-                      <Nav
-                        variant="pills"
-                        className="nav-pills mb-5 justify-content-center align-items-center"
-                        id="pills-tab"
-                      >
-                        <Nav.Item>
-                          <Nav.Link eventKey="first">Projects</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link eventKey="second">Personal</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link eventKey="third">Practice</Nav.Link>
-                        </Nav.Item>
-                      </Nav>
-                      <TabContent
-                        id="slideInUp"
-                        className={
-                          isVisible
-                            ? "animate__animated animate__slideInUp"
-                            : ""
-                        }
-                      >
-                        <Tab.Pane eventKey="first">
-                          <Row className="gy-5">
-                            {projects.map((project, index) => {
-                              return <ProjectCard key={index} {...project} />;
-                            })}
-                          </Row>
-                        </Tab.Pane>
-                        <Tab.Pane eventKey="second">
-                          <p>Coming soon...</p>
-                        </Tab.Pane>
-                        <Tab.Pane eventKey="third">
-                          <p>Coming soon...</p>
-                        </Tab.Pane>
-                      </TabContent>
-                    </TabContainer>
+
+                    <Row className="gy-5">
+                      {projects.map((project, index) => {
+                        return <ProjectCard key={index} {...project} />;
+                      })}
+                    </Row>
                   </div>
                 );
               }}

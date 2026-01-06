@@ -33,17 +33,39 @@ const Education = () => {
               <h2 className="fw-bold text-uppercase">Work Experience</h2>
               <div className="row gy-3 edu_wrapper">
                 <div className="edu_detail">
-                  <h4>Justtry Technologies</h4>
+                  <h4>
+                    Aarel Infotech{" "}
+                    <span>
+                      <a href="https://www.aarelit.com/" target="__blank">
+                        (www.aarelit.com)
+                      </a>
+                    </span>
+                  </h4>
+
+                  <h6>React & React Native Developer</h6>
+                  <p>Sep 2024 - Present</p>
+                </div>
+                <div className="edu_detail">
+                  <h4>
+                    Justtry Technologies{" "}
+                    <span>
+                      <a href="https://justtrytech.com/" target="__blank">
+                        (justtrytech.com)
+                      </a>
+                    </span>
+                  </h4>
                   <h6>Front End React JS Developer</h6>
-                  <p>Aug 2023  -  Jun - 2024</p>
+                  <p>Jan 2023 - Aug 2024</p>
                 </div>
                 <div className="edu_detail">
-                  <h4>BRN Infotech Private Limited (Intern)</h4>
-                  <h6>MERN Full Stack Developer</h6>
-                  <p>Jan 2023 - May - 2023</p>
-                </div>
-                <div className="edu_detail">
-                  <h4>RD Solutions Inc</h4>
+                  <h4>
+                    RD Solutions Inc{" "}
+                    <span>
+                      <a href="https://rdsolutionsinc.com/" target="__blank">
+                        (rdsolutionsinc.com)
+                      </a>
+                    </span>
+                  </h4>
                   <h6>US IT Recruiter</h6>
                   <p>Jun 2022 - Dec 2022</p>
                 </div>
